@@ -1,0 +1,132 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "Shell",
+			"command": "C:\\mingw64\\bin\\g++.exe",
+			"args": [
+				"${workspaceFolder}\\src\\*.cpp",
+				"-o",
+				"${workspaceFolder}\\build\\${fileBasenameNoExtension}.exe",
+				"-I",
+				"${workspaceFolder}\\include",
+				"-I",
+				"C:\\wxWidget\\include",
+				"-I",
+				"C:\\Cmake\\release\\lib\\gcc_x64_dll\\mswu",
+				"-L",
+				"C:\\Cmake\release\\lib\\gcc_x64_dll",
+				"-l",
+				"wxmsw32u_core",
+				"-l",
+				"wxbase32u"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "compiler: C:\\mingw64\\bin\\g++.exe"
+		},
+		{
+			"type": "cppbuild",
+			"label": "Image_Build",
+			"command": "C:\\mingw64\\bin\\g++.exe",
+			"args": [
+				
+				"${workspaceFolder}\\src\\*.cpp",
+				"-o",
+				"${workspaceFolder}\\build\\${fileBasenameNoExtension}.exe",
+				"-I",
+				"C:\\wxWidget\\include",
+				"-I",
+				"${workspaceFolder}\\include",
+				"-I",
+				"C:\\Opencv\\include",
+				"-I",
+				"C:\\Cmake\\release\\lib\\gcc_x64_dll\\mswu",
+				"-I",
+				"C:\\OpencvBuild",
+				"-I",
+				"C:\\Opencv\\modules\\core\\include",
+				"-I",
+				"C:\\Opencv\\modules\\calib3d\\include",
+				"-I",
+				"C:\\Opencv\\modules\\dnn\\include",
+				"-I",
+				"C:\\Opencv\\modules\\features2d\\include",
+				"-I",
+				"C:\\Opencv\\modules\\flann\\include",
+				"-I",
+				"C:\\Opencv\\modules\\highgui\\include",
+				"-I",
+				"C:\\Opencv\\modules\\imgcodecs\\include",
+				"-I",
+				"C:\\Opencv\\modules\\imgproc\\include",
+				"-I",
+				"C:\\Opencv\\modules\\ml\\include",
+				"-I",
+				"C:\\Opencv\\modules\\objdetect\\include",
+				"-I",
+				"C:\\Opencv\\modules\\photo\\include",
+				"-I",
+				"C:\\Opencv\\modules\\stitching\\include",
+				"-I",
+				"C:\\Opencv\\modules\\video\\include",
+				"-I",
+				"C:\\Opencv\\modules\\videoio\\include",
+				"-L",
+				 "C:\\OpencvBuild\\bin",
+				"-L",
+				"C:\\Cmake\\release\\lib\\gcc_x64_dll",
+				"-l",
+				"wxmsw32u_core",
+				"-l",
+				"wxbase32u",
+				"-l",
+				"libopencv_calib3d4100",
+				"-l",
+				"libopencv_core4100",
+				"-l",
+				"libopencv_dnn4100",
+				"-l",
+                "libopencv_features2d4100",
+				"-l",
+				"libopencv_flann4100",
+				"-l",
+				"libopencv_highgui4100",
+				"-l",
+				"libopencv_imgcodecs4100",
+				"-l",
+				"libopencv_imgproc4100",
+				"-l",
+				"libopencv_ml4100",
+				"-l",
+				"libopencv_objdetect4100",
+				"-l",
+				"libopencv_photo4100",
+				"-l",
+				"libopencv_stitching4100",
+				"-l",
+				"libopencv_video4100",
+				"-l",
+				"libopencv_videoio4100"
+
+			],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"detail": "compiler: C:\\mingw64\\bin\\g++.exe"
+		}
+	]
+}
